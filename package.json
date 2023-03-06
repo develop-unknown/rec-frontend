@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "license": "MIT",
+  "name": "rec-frontend",
+  "author": "develop-unknown",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/develop-unknown/rec-frontend"
+  },
+  "homepage": "https://github.com/develop-unknown/rec-frontend",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.2.3"
+  },
+  "browserslist": [
+    "> 0.2%, not dead",
+    "not IE 11"
+  ]
+}
