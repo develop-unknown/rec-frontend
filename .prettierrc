@@ -1,0 +1,17 @@
+{
+  "trailingComma": "es5",
+  "printWidth": 160,
+  "tabWidth": 2,
+  "semi": false,
+  "useTabs": false,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "quoteProps": "consistent",
+  "vueIndentScriptAndStyle": true,
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended",
+    "@vue/eslint-config-prettier"
+  ]
+}
