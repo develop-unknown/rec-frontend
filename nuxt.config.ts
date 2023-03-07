@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     port: 3000,
   },
   srcDir: 'src',
-  ssr: false,
+  ssr: true,
   app: {
     // baseURL: '/nuxt-template/',
     head: {
