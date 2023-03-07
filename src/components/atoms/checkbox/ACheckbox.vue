@@ -44,6 +44,7 @@
     cursor: pointer;
     padding: 0.25rem 0.5rem;
   }
+
   .c-checkbox-name {
     user-select: none;
     margin-left: 0.25rem;

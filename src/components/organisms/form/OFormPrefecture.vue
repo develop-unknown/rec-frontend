@@ -1,7 +1,8 @@
 <script setup lang="ts">
-  import { ResasComposable, ResasComposableKey } from '@/composables/resas/resas'
-  import { createNuxtError500 } from '@/utils/common'
   import ACheckbox from '@/components/atoms/checkbox/ACheckbox.vue'
+  import type { ResasComposable } from '@/composables/resas/resas'
+  import { ResasComposableKey } from '@/composables/resas/resas'
+  import { createNuxtError500 } from '@/utils/common'
 
   const resasComposable = inject(ResasComposableKey) as ResasComposable
   if (!resasComposable) {
@@ -17,8 +18,8 @@
       :key="prefecture.prefCode"
       :code="prefecture.prefCode"
       :name="prefecture.prefName"
-      :isChecked="checkMap.get(prefecture.prefCode)"
-      @onChange="changeChecked"
+      :is-checked="checkMap.get(prefecture.prefCode)"
+      @on-change="changeChecked"
     ></ACheckbox>
   </div>
 </template>

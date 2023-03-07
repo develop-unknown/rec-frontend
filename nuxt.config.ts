@@ -1,4 +1,6 @@
 import * as fs from 'fs'
+
+import locales from './src/i18n/index'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // .envに「NUXT_API_KEY」のような同名が存在すれば上書きされる
@@ -68,5 +70,16 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: [['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'] }]],
+  modules: [['@pinia/nuxt', { autoImports: ['defineStore', 'acceptHMRUpdate'] }], '@nuxtjs/i18n'],
+  i18n: {
+    defaultLocale: 'ja',
+    vueI18n: {
+      legacy: false,
+      locale: 'ja',
+      messages: {
+        ja: locales['ja-JP'],
+        en: locales['en-US'],
+      },
+    },
+  },
 })
