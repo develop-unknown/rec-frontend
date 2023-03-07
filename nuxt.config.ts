@@ -14,10 +14,13 @@ export default defineNuxtConfig({
     preset: 'node',
   },
   devServer: {
-    https: {
-      key: fs.readFileSync('./mkcert/localhost+1-key.pem', 'utf-8'),
-      cert: fs.readFileSync('./mkcert/localhost+1.pem', 'utf-8'),
-    },
+    https:
+      process.env['NODE_ENV'] === 'development'
+        ? {
+            key: fs.readFileSync('./mkcert/localhost+1-key.pem', 'utf-8'),
+            cert: fs.readFileSync('./mkcert/localhost+1.pem', 'utf-8'),
+          }
+        : false,
     host: '0.0.0.0',
     port: 3000,
   },
