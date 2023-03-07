@@ -1,15 +1,13 @@
-# Git-flow
+# Portforio
 
-``` bash
-Branch name for production releases: [main] 
-Branch name for "next release" development: [develop] 
+## PC
 
-How to name your supporting branch prefixes?
-Feature branches? [feature/] 
-Bugfix branches? [bugfix/] 
-Release branches? [release/] 
-Hotfix branches? [hotfix/] 
-Support branches? [support/] 
-Version tag prefix? [] v
-Hooks and filters directory? [D:/projects/recruit/rec-frontend/.git/hooks] 
-```
+![SurfacePro7](doc/SurfacePro7.png 'SurfacePro7')
+
+![SurfacePro7 Chart表示](doc/SurfacePro7_chart.png 'SurfacePro7')
+
+## iPhone SE
+
+![iPhoneSE](doc/iPhoneSE.png 'iPhoneSE')
+
+![iPhoneSE Chart表示](doc/iPhoneSE_chart.png 'iPhoneSE')
