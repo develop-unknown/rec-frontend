@@ -1,6 +1,8 @@
 module.exports = {
-  extends: ['stylelint-config-recommended', 'stylelint-config-standard'],
+  plugins: ['stylelint-prettier'],
+  extends: ['stylelint-config-recommended', 'stylelint-config-standard', 'stylelint-config-recommended-vue'],
   rules: {
+    'prettier/prettier': true,
     'selector-pseudo-element-no-unknown': [
       true,
       {

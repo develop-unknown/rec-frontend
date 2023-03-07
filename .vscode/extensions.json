@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "vue.volar",
-    "dariofuzinato.vue-peek"
+    "dariofuzinato.vue-peek",
+    "stylelint.vscode-stylelint"
   ]
 }
