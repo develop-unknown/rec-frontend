@@ -26,6 +26,7 @@ export default defineEventHandler(async (): Promise<Prefecture[]> => {
     method: METHOD,
     credentials: 'include',
     headers: HEADERS,
+    keepalive: true,
   })
 
   // messageは不要なため都道府県一覧のみ返却

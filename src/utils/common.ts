@@ -1,4 +1,5 @@
-import { getCurrentInstance, inject, InjectionKey } from 'vue'
+import type { InjectionKey } from 'vue'
+import { getCurrentInstance, inject } from 'vue'
 
 /**
  * Utils:Provide元でInjectし、利用する

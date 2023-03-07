@@ -4,7 +4,7 @@
   <div class="f-wrapper">
     <header class="l-header">
       <div class="l-header-container l-container">
-        <div class="c-header-title">TITLE</div>
+        <div class="c-header-title">{{ $t('title') }}</div>
       </div>
     </header>
     <main id="main" class="l-main l-container">
@@ -17,7 +17,6 @@
   .f-wrapper {
     height: 100%;
     min-height: 100vh;
-    min-height: 100dvh;
     width: 100%;
     background-color: whitesmoke;
     font-size: 1rem;
@@ -25,14 +24,16 @@
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     line-height: 1.25rem;
     color: dimgrey;
+    box-sizing: border-box;
   }
+
   .l-header {
-    width: 100vw;
-    width: 100dvw;
+    width: 100%;
     height: 4rem;
     background-color: dimgrey;
     overflow: hidden;
   }
+
   .l-header-container {
     display: flex;
     justify-content: space-between;
@@ -43,14 +44,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .l-main {
     display: flex;
     position: relative;
-    height: calc(100vh - 4rem);
-    height: calc(100dvh - 4rem);
     padding: 0.5rem;
     margin: auto;
   }
+
   .c-header-title {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -59,16 +60,28 @@
   }
 
   .l-container {
-    width: 100vw;
-    width: 100dvw;
-    max-width: 100vw;
-    max-width: 100dvw;
+    width: 100%;
+    max-width: 100%;
   }
+
+  @media screen and (min-width: 640px) {
+    .l-container {
+      max-width: 640px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .l-container {
+      max-width: 768px;
+    }
+  }
+
   @media screen and (min-width: 1280px) {
     .l-container {
       max-width: 1280px;
     }
   }
+
   @media screen and (min-width: 1536px) {
     .l-container {
       max-width: 1536px;
